@@ -28,6 +28,10 @@ COPY --chmod=755 <<EOF /bin/entrypoint.sh
     set -euo pipefail
     : "\${BRANCH:=main}"
 
+    echo "Adding module"
+    mkdir /zmk-modules
+    git clone https://github.com/dhruvinsh/zmk-tri-state.git /zmk-modules/zmk-tri-state
+
     echo "Checking out \$BRANCH from moergo-sc/zmk" >&2
     cd /src
     git fetch origin
