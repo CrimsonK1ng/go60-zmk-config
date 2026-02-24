@@ -348,10 +348,10 @@
 
         navi_layer {
             bindings = <
-            &lt ADJ ESC  &kp N1 &kp N2       &kp N3       &kp N4        &kp N5                                 &kp N6    &kp N7     &kp N8    &kp N9    &kp N0           &lt ADJ BSPC
-            &trans &trans   &trans    &sk LALT  &trans    &trans                                        &trans &kp PG_UP   &kp LS(LC(TAB))    &kp LC(TAB) &guitab   &guitil
-            &trans &trans   &sk LALT  &sk LCTRL &sk LGUI  &sk LS(LG(LC(LALT)))                          &trans &kp LEFT    &kp DOWN           &kp UP      &kp RIGHT &trans 
-            &trans &trans   &trans    &sk LALT  &sk LSHFT  &trans                                       &trans &kp PG_DN   &kp HOME           &kp END     &trans    &trans 
+            &lt ADJ ESC  &kp N1 &kp N2       &kp N3       &kp N4        &kp N5                                &kp N6    &kp N7     &kp N8    &kp N9    &kp N0           &lt ADJ BSPC
+            &trans &trans   &trans    &sk LALT  &trans    &trans                                              &kp PG_UP   &kp LS(LC(TAB))    &kp LC(TAB) &guitab   &guitil &trans 
+            &trans &trans   &sk LALT  &sk LCTRL &sk LGUI  &sk LS(LG(LC(LALT)))                                &kp LEFT    &kp DOWN           &kp UP      &kp RIGHT &trans &trans 
+            &trans &trans   &trans    &sk LALT  &sk LSHFT  &trans                                             &kp PG_DN   &kp HOME           &kp END     &trans    &trans &trans 
                                 &trans &trans &trans                                                             &trans &trans &trans  
                                                 &trans &hml LSHFT BSPC &trans              &trans &hmr RCTRL RET &trans
             >;
@@ -399,8 +399,8 @@
 
 &cirque_rh_listener {
     input-processors = <&zip_xy_scaler 3 1>;
-    layer_2 {
-        layers = <2>;
+    layer_4 {
+        layers = <4>;
         input-processors = <&zip_xy_scaler 9 1>;
     };
 };
